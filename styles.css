@@ -105,6 +105,18 @@ nav a:hover {
 
 }
 
+/* NEW responsive logo adjustments */
+@media (max-width: 768px) {
+    header img.logo {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img.logo {
+        height: 80px;
+    }
+}
 
 
 
