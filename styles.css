@@ -16,18 +16,18 @@ body {
     align-items: center;
 }
 
-/* FULL-WIDTH LOGO */
+/* FULL-WIDTH LOGO FIX */
 header {
     width: 100%;
+    text-align: center; /* ensures image is centered */
 }
 
-/* FULL-WIDTH LOGO */
 header img.logo {
-    width: 100% !important;        /* stretch logo across the screen */
-    height: 130px !important;      /* fixed height */
-    object-fit: contain !important; /* keep logo proportions, no cropping */
-    display: block !important;
-    margin: 0 !important;          /* remove default spacing */
+    max-width: 100% !important;   /* allows it to shrink on smaller screens */
+    width: auto !important;        /* natural width based on image file */
+    height: 130px !important;      /* fixed height as client wants */
+    display: inline-block !important;
+    object-fit: contain !important;
 }
 
 /* FULL-WIDTH NAV */
@@ -104,4 +104,5 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
