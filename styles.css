@@ -22,13 +22,11 @@ header {
 }
 
 header img.logo {
-    width: 100% !important;   /* full width of container */
-    height: 130px !important; /* fixed height */
-    object-fit: fill !important; /* stretch to fill the width and height */
-    display: block !important;
-    margin: 0 auto !important;
+    display: block;
+    width: 930px;    /* exact width to match resized image */
+    height: 130px;   /* height you want */
+    margin: 0 auto;  /* center the logo */
 }
-
 /* FULL-WIDTH NAV */
 nav {
     width: 100%;
@@ -103,6 +101,7 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
 
 
