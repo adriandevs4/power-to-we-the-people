@@ -100,4 +100,12 @@ nav a:hover {
     .container {
         padding: 20px 10px;
     }
+
+}
+
+.logo {
+    height: 130px;   /* Same thickness as his image */
+    width: auto;     /* Keeps proportions perfect */
+    display: block;
+    margin: 0 auto;  /* Center it if needed */
 }
