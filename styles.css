@@ -104,8 +104,8 @@ nav a:hover {
 }
 
 .logo {
-    height: 130px;   /* Same thickness as his image */
-    width: auto;     /* Keeps proportions perfect */
+    height: 130px;   /* match his preferred thickness */
+    width: auto;     /* keep proportions correct */
     display: block;
-    margin: 0 auto;  /* Center it if needed */
+    margin: 0 auto;  /* centers the logo */
 }
