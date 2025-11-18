@@ -22,10 +22,10 @@ header {
 }
 
 header img.logo {
+    height: 130px !important;
+    width: auto !important;
     display: block;
-    width: auto;       /* let width scale proportionally */
-    height: 130px;     /* match the height he wants */
-    margin: 0 auto;    /* center the logo */
+    margin: 0 auto;
 }
 
 /* FULL-WIDTH NAV */
@@ -103,5 +103,6 @@ nav a:hover {
     }
 
 }
+
 
 
