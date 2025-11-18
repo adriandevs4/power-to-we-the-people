@@ -22,11 +22,11 @@ header {
 }
 
 header img.logo {
-   max-width: 100% !important;
-   width: auto !important;
-   height: 130px !important;
-   display: inline-block !important;
-   object-fit: contain !important;
+    width: 100% !important;   /* full width of container */
+    height: 130px !important; /* fixed height */
+    object-fit: fill !important; /* stretch to fill the width and height */
+    display: block !important;
+    margin: 0 auto !important;
 }
 
 /* FULL-WIDTH NAV */
@@ -103,6 +103,7 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
 
 
