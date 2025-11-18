@@ -1,4 +1,4 @@
-/* RESET */
+/* RESET */ 
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* keep content centered with container, not the whole body */
 }
 
 /* FULL-WIDTH LOGO */
@@ -22,15 +22,16 @@ header {
 }
 
 header img.logo {
-    width: 100%;         /* stretch across screen */
+    width: 100%;         /* stretch across the screen */
     height: 130px;       /* fixed height */
-    object-fit: contain;  /* ensures the whole logo is visible, no cropping */
+    object-fit: contain;  /* maintain logo proportions */
     display: block;
     margin: 0;
 }
 
+/* FULL-WIDTH NAV */
 nav {
-    width: 100%;            /* full width to match logo */
+    width: 100%;            
     background-color: #0A3161;
     display: flex;
     justify-content: center;
@@ -43,7 +44,7 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;  /* bigger text */
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -54,8 +55,8 @@ nav a:hover {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 800px;  /* content still stays centered */
+    align-items: center;   /* center only page content */
+    max-width: 800px;      
     width: 100%;
     padding: 40px 20px;
     text-align: center;
@@ -64,17 +65,17 @@ nav a:hover {
 /* TABLETS */
 @media (max-width: 768px) {
     header img.logo {
-        height: 100px;   /* smaller height on tablets */
+        height: 100px;
     }
 
     nav {
-        flex-wrap: wrap;   /* links wrap to next line if needed */
+        flex-wrap: wrap;
         gap: 20px;
         padding: 15px 0;
     }
 
     nav a {
-        font-size: 18px;  /* slightly smaller text */
+        font-size: 18px;
     }
 
     .container {
@@ -85,11 +86,11 @@ nav a:hover {
 /* PHONES */
 @media (max-width: 480px) {
     header img.logo {
-        height: 80px;    /* smaller height on phones */
+        height: 80px;
     }
 
     nav {
-        flex-direction: column; /* stack links vertically */
+        flex-direction: column;
         gap: 10px;
         padding: 10px 0;
     }
