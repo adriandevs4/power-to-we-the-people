@@ -22,9 +22,11 @@ header {
 }
 
 header img.logo {
+    width: 100%;        /* stretch across screen */
+    height: 130px;      /* fixed height */
+    object-fit: contain; /* maintain proportions without cropping */
     display: block;
-    width: 100%;      /* stretches across full screen */
-    height: auto;
+    margin: 0;          /* remove any extra spacing */
 }
 
 /* FULL-WIDTH NAV */
@@ -60,10 +62,10 @@ nav a:hover {
     text-align: center;
 }
 
-/* Tablets */
+/* TABLETS */
 @media (max-width: 768px) {
     header img.logo {
-        width: 80%; /* logo shrinks */
+        height: 100px;   /* smaller height on tablets */
     }
 
     nav {
@@ -81,10 +83,10 @@ nav a:hover {
     }
 }
 
-/* Phones */
+/* PHONES */
 @media (max-width: 480px) {
     header img.logo {
-        width: 100%;  /* full width of the screen */
+        height: 80px;    /* smaller height on phones */
     }
 
     nav {
@@ -100,11 +102,4 @@ nav a:hover {
     .container {
         padding: 20px 10px;
     }
-}
-
-.logo {
-    height: 130px;   
-    width: auto;     
-    display: block;
-    margin: 0 auto;  
 }
