@@ -24,13 +24,13 @@ header {
 }
 /* FULL-WIDTH LOGO */
 header img.logo {
-    width: 100% !important;        /* stretch across the screen */
-    max-width: 100% !important;    /* prevent overflow */
-    height: 300px !important;      /* fixed height */
-    object-fit: contain !important; /* keep proportions, no cropping */
     display: block !important;
-    margin: 0 !important;          /* remove default spacing */
+    width: 100vw !important;    /* use full viewport width */
+    height: 300px !important;   /* fixed height you want */
+    object-fit: cover !important; /* keeps aspect ratio, may crop slightly */
+    margin: 0 !important;       /* remove spacing */
 }
+
 
 /* FULL-WIDTH NAV */
 nav {
@@ -129,6 +129,7 @@ header img.logo {
   display: block;
   margin: 0;
 }
+
 
 
 
