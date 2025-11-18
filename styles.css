@@ -22,9 +22,8 @@ header {
 }
 
 header img.logo {
-    height: 130px;
-    width: 100%;
-    object-fit: cover;
+    width: 100%;       /* full width */
+    height: auto;      /* scale height proportionally */
     display: block;
     margin: 0;
 }
@@ -103,4 +102,5 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
