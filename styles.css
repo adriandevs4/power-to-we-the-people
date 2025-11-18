@@ -1,4 +1,4 @@
-/* RESET */ 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    /* keep content centered with container, not the whole body */
+    align-items: center;
 }
 
 /* FULL-WIDTH LOGO */
@@ -22,21 +22,19 @@ header {
 }
 
 header img.logo {
-    width: 100%;         /* stretch across the screen */
-    height: 130px;       /* fixed height */
-    object-fit: contain;  /* maintain logo proportions */
     display: block;
-    margin: 0;
+    width: 100%;      /* stretches across full screen */
+    height: auto;
 }
 
 /* FULL-WIDTH NAV */
 nav {
-    width: 100%;            
+    width: 100%;
     background-color: #0A3161;
     display: flex;
     justify-content: center;
-    gap: 50px;
-    padding: 20px 0;
+    gap: 50px;       /* space between links */
+    padding: 20px 0; /* makes the blue bar taller */
 }
 
 nav a {
@@ -44,7 +42,7 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 20px;  /* bigger text */
 }
 
 nav a:hover {
@@ -55,27 +53,27 @@ nav a:hover {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* center only page content */
-    max-width: 800px;      
+    align-items: center;
+    max-width: 800px;  /* content still stays centered */
     width: 100%;
     padding: 40px 20px;
     text-align: center;
 }
 
-/* TABLETS */
+/* Tablets */
 @media (max-width: 768px) {
     header img.logo {
-        height: 100px;
+        width: 80%; /* logo shrinks */
     }
 
     nav {
-        flex-wrap: wrap;
+        flex-wrap: wrap;   /* links wrap to next line if needed */
         gap: 20px;
         padding: 15px 0;
     }
 
     nav a {
-        font-size: 18px;
+        font-size: 18px;  /* slightly smaller text */
     }
 
     .container {
@@ -83,14 +81,14 @@ nav a:hover {
     }
 }
 
-/* PHONES */
+/* Phones */
 @media (max-width: 480px) {
     header img.logo {
-        height: 80px;
+        width: 100%;  /* full width of the screen */
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: column; /* stack links vertically */
         gap: 10px;
         padding: 10px 0;
     }
@@ -104,7 +102,9 @@ nav a:hover {
     }
 }
 
-
-
-
-
+.logo {
+    height: 130px;   
+    width: auto;     
+    display: block;
+    margin: 0 auto;  
+}
