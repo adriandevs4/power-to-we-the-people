@@ -22,11 +22,11 @@ header {
 }
 
 header img.logo {
-    height: 130px;       /* fixed height he wants */
-    width: 100%;         /* stretch across screen */
-    object-fit: cover;   /* keeps proportions while filling width */
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
     display: block;
-    margin: 0;           /* remove default margins */
+    margin: 0;
 }
 
 /* FULL-WIDTH NAV */
@@ -103,3 +103,4 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
