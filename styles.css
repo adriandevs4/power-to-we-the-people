@@ -22,12 +22,12 @@ header {
 }
 
 header img.logo {
-    width: 100%;           /* stretches across the top of the screen */
-    max-width: 100%;       /* prevents overflow */
-    height: 300px;         /* fixed height you want */
-    object-fit: contain;   /* maintains aspect ratio */
-    display: block;
-    margin: 0;
+    width: 100% !important;        /* stretches across entire screen */
+    max-width: 100% !important;    /* prevents overflow */
+    height: 300px !important;      /* sets the height you want */
+    object-fit: contain !important; /* keeps proportions */
+    display: block !important;
+    margin: 0 !important;          /* removes any default spacing */
 }
 
 /* FULL-WIDTH NAV */
@@ -104,6 +104,7 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
 
 
