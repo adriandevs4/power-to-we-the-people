@@ -62,10 +62,10 @@ nav a:hover {
     text-align: center;
 }
 
-/* Tablets */
+/* TABLETS */
 @media (max-width: 768px) {
     header img.logo {
-        width: 80%; /* logo shrinks */
+        height: 100px;   /* smaller height on tablets */
     }
 
     nav {
@@ -83,10 +83,10 @@ nav a:hover {
     }
 }
 
-/* Phones */
+/* PHONES */
 @media (max-width: 480px) {
     header img.logo {
-        width: 100%;  /* full width of the screen */
+        height: 80px;    /* smaller height on phones */
     }
 
     nav {
@@ -102,22 +102,4 @@ nav a:hover {
     .container {
         padding: 20px 10px;
     }
-
 }
-
-/* NEW responsive logo adjustments */
-@media (max-width: 768px) {
-    header img.logo {
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    header img.logo {
-        height: 80px;
-    }
-}
-
-
-
-
