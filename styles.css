@@ -18,9 +18,10 @@ body {
 
 /* FULL-WIDTH LOGO */
 header {
-    width: 100%;
+    width: 100vw;    /* full viewport width */
+    margin: 0;
+    padding: 0;
 }
-
 /* FULL-WIDTH LOGO */
 header img.logo {
     width: 100% !important;        /* stretch across the screen */
@@ -105,6 +106,7 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
 
 
