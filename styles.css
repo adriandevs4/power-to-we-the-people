@@ -16,15 +16,16 @@ body {
     align-items: center;
 }
 
+/* FULL-WIDTH LOGO */
 header {
-   width: 100%;
-   text-align: center !important;
+    width: 100%;
 }
 
 header img.logo {
-    width: 100%;        /* stretch across the screen */
-    height: 300px;      /* desired height */
-    object-fit: contain; /* keeps proportions without cutting off */
+    width: 100%;           /* stretches across the top of the screen */
+    max-width: 100%;       /* prevents overflow */
+    height: 300px;         /* fixed height you want */
+    object-fit: contain;   /* maintains aspect ratio */
     display: block;
     margin: 0;
 }
@@ -103,6 +104,7 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
 
 
