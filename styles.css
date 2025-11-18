@@ -16,18 +16,17 @@ body {
     align-items: center;
 }
 
-/* FULL-WIDTH LOGO FIX */
 header {
-    width: 100%;
-    text-align: center; /* ensures image is centered */
+   width: 100%;
+   text-align: center !important;
 }
 
 header img.logo {
-    max-width: 100% !important;   /* allows it to shrink on smaller screens */
-    width: auto !important;        /* natural width based on image file */
-    height: 130px !important;      /* fixed height as client wants */
-    display: inline-block !important;
-    object-fit: contain !important;
+   max-width: 100% !important;
+   width: auto !important;
+   height: 130px !important;
+   display: inline-block !important;
+   object-fit: contain !important;
 }
 
 /* FULL-WIDTH NAV */
@@ -104,5 +103,6 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
 
 
