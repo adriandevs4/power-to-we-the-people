@@ -23,8 +23,9 @@ header {
 
 header img.logo {
     display: block;
-    width: 100%;      /* stretches across full screen */
-    height: auto;
+    width: auto;       /* let width scale proportionally */
+    height: 130px;     /* match the height he wants */
+    margin: 0 auto;    /* center the logo */
 }
 
 /* FULL-WIDTH NAV */
@@ -103,9 +104,4 @@ nav a:hover {
 
 }
 
-.logo {
-    height: 130px;   /* match his preferred thickness */
-    width: auto;     /* keep proportions correct */
-    display: block;
-    margin: 0 auto;  /* centers the logo */
-}
+
