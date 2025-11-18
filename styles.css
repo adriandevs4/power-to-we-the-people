@@ -21,12 +21,13 @@ header {
     width: 100%;
 }
 
+/* FULL-WIDTH LOGO */
 header img.logo {
-    width: 100%;        /* stretch across screen */
-    height: 130px;      /* fixed height */
-    object-fit: contain; /* maintain proportions without cropping */
-    display: block;
-    margin: 0;          /* remove any extra spacing */
+    width: 100% !important;        /* stretch logo across the screen */
+    height: 130px !important;      /* fixed height */
+    object-fit: contain !important; /* keep logo proportions, no cropping */
+    display: block !important;
+    margin: 0 !important;          /* remove default spacing */
 }
 
 /* FULL-WIDTH NAV */
@@ -103,3 +104,4 @@ nav a:hover {
         padding: 20px 10px;
     }
 }
+
